@@ -1,4 +1,4 @@
-# Customizable Quiz Maker is a dynamic web application developed in TypeScript that allows users to create, customize, and take quizzes. It features an intuitive quiz creation interface, a user-friendly quiz-taking experience, and immediate results feedback. This project was developed to demonstrate proficiency in TypeScript and full-stack development.
+## Customizable Quiz Maker is a dynamic web application developed in TypeScript that allows users to create, customize, and take quizzes. It features an intuitive quiz creation interface, a user-friendly quiz-taking experience, and immediate results feedback. This project was developed to demonstrate proficiency in TypeScript and full-stack development.
 
 ## Features
 - Quiz Creation: Users can create quizzes with custom questions and multiple-choice answers.
