@@ -26,14 +26,14 @@ function displayQuestion() {
             submitButton.style.display = 'block';
         }
 
-        // Check choicesElement separately to satisfy TypeScript's strict null checking
+        // Perform a null check on choicesElement before using it
         if (choicesElement) {
             choicesElement.innerHTML = '';
             quiz.getCurrentQuestion().choices.forEach(choice => {
                 let button = document.createElement('button');
                 button.innerText = choice;
                 button.onclick = () => makeGuess(choice);
-                choicesElement.appendChild(button);
+                choicesElement.appendChild(button); // This is now safe to use
             });
         }
     }
