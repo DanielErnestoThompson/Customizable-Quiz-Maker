@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var question_1 = require("./question");
-var quiz_1 = require("./quiz");
+var question_1 = require("../src/question");
+var quiz_1 = require("../src/quiz");
 // Sample questions
 var questions = [
     new question_1.Question("What is 2 + 2?", ["3", "4", "5", "6"], "4"),

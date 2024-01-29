@@ -4,5 +4,6 @@ export class Question {
     isCorrectAnswer(choice: string) {
         return choice === this.answer;
     }
+    
 }
- 
+

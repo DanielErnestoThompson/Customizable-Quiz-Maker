@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="quiz-container">
+    <div id="quiz">
         <h1>Welcome to the Quiz Maker!</h1>
         <div id="question"></div>
         <div id="choices"></div>
-        <button id="next-button" onclick="nextQuestion()">Next Question</button>
-        <div id="results"></div>
+        <button id="submit" style="display:none;" onclick="makeGuess()">Submit Answer</button>
     </div>
+    <div id="result" style="display:none;"></div>
 
     <script src="../src/app.js"></script>
-    <script>
-        // This script tag will interact with your TypeScript code.
-        // You will need to implement the nextQuestion function in your TypeScript code.
-    </script>
 </body>
 </html>
