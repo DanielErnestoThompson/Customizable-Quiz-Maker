@@ -1,0 +1,12 @@
+{
+  "name": "customizable-quiz-maker",
+  "version": "1.0.0",
+  "description": "- Quiz Creation: Users can create quizzes with custom questions and multiple-choice answers.\r - Quiz Customization: Each quiz can be customized with titles, descriptions, and time limits.\r - Interactive Quiz-Taking: A sleek interface for users to take quizzes and submit answers.\r - Immediate Results: Users receive instant feedback upon quiz completion, including scores and correct answers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
