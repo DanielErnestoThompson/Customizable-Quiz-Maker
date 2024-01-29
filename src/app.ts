@@ -57,5 +57,7 @@ function showScores() {
     }
 }
 
+(window as any).makeGuess = makeGuess;
+
 // Initialize quiz display
 displayQuestion();

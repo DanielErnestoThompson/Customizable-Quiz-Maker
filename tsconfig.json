@@ -7,7 +7,6 @@
     "forceConsistentCasingInFileNames": true,    /* Disallow inconsistently-cased references to the same file. */
     "strict": true,                              /* Enable all strict type-checking options. */
     "skipLibCheck": true,                        /* Skip type checking of all declaration files (*.d.ts). */
-    "outDir": "./public",                        /* Redirect output structure to the directory. */
 
     /* Strict Type-Checking Options */
     "strictNullChecks": true,                    /* Enable strict null checks. */
