@@ -19,24 +19,23 @@ function displayQuestion() {
 
     if (quiz.isEnded()) {
         showScores();
-    } else if (questionElement && choicesElement && submitButton) {
-        // Display question text
-        questionElement.innerText = quiz.getCurrentQuestion().text;
+    } else {
+        // Ensure questionElement and submitButton are not null
+        if (questionElement && submitButton) {
+            questionElement.innerText = quiz.getCurrentQuestion().text;
+            submitButton.style.display = 'block';
+        }
 
-        // Clear previous choices
-        choicesElement.innerHTML = '';
-
-        // Display choices as buttons
-        quiz.getCurrentQuestion().choices.forEach(choice => {
-            let button = document.createElement('button');
-            button.innerText = choice;
-            button.onclick = () => makeGuess(choice);
-            // Use choicesElement with confidence it's not null
-            choicesElement.appendChild(button);
-        });
-
-        // Show the submit button
-        submitButton.style.display = 'block';
+        // Check choicesElement separately to satisfy TypeScript's strict null checking
+        if (choicesElement) {
+            choicesElement.innerHTML = '';
+            quiz.getCurrentQuestion().choices.forEach(choice => {
+                let button = document.createElement('button');
+                button.innerText = choice;
+                button.onclick = () => makeGuess(choice);
+                choicesElement.appendChild(button);
+            });
+        }
     }
 }
 
